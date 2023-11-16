@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/index.css">
+  <title>Bookmarker</title>
+</head>
+<body>
+  <section class="bg-warning">
+    <div class="container-fluid vh-100">
+      <div class="title w-75 mx-auto py-5 ">
+        <h1 class="fw-bold">BookMarker</h1>
+    <p> Bookmark your favorite sites </p>
+    <div class="mb-3">
+      <label for="siteName" class="form-label fw-bold">Site Name</label>
+      <input type="text" oninput="validateSiteName()" class="form-control" id="nameInput" placeholder="Bookmark Name">
+    </div>
+    <p class="text-danger d-none" id="wrongName">Invalid Name</p>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label fw-bold">Site URL</label>
+      <input type="text" class="form-control" oninput="validateSiteUrl()" id="urlInput" placeholder="example123.com">
+    </div>
+    <p class="text-danger d-none" id="wrongUrl">Invalid Url (For example : example.com | www.example.com | https://www.example.com)</p>
+    <button type="button" class="btn btn-info" id="submitBtn" >Submit</button>
+    <table  class="table text-center mx-auto mt-4">
+      <thead>
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+      </div>
+    </div>
+  </section>
+  <script src="js/index.js"></script>
+  </body>
+</head>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+h1::before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 5px;
+    background-color: crimson;
+    left: 0;
+    bottom: -8px;
+}
+
+h1{
+    position: relative;
+    font-size: 60px;
+
+}
+
+.title p{
+    font-size: 24px;
+    padding-block: 15px;
+}
